@@ -686,6 +686,8 @@
     <Content Include="Content\tinymce\skins\lightgray\skin.min.css" />
     <Content Include="Content\tinymce\themes\modern\theme.min.js" />
     <Content Include="Content\tinymce\tinymce.min.js" />
+    <Content Include="favicon-1.ico" />
+    <Content Include="favicon.ico" />
     <Content Include="Scripts\fineuploader\edit.gif" />
     <Content Include="Scripts\fineuploader\fineuploader-4.2.2.css" />
     <Content Include="Scripts\fineuploader\fineuploader-4.2.2.min.css" />
@@ -729,7 +731,6 @@
     <Content Include="Content\tinymce\plugins\jbimages\langs\ru_dlg.js" />
     <Content Include="Content\tinymce\plugins\jbimages\plugin.js" />
     <Content Include="Content\tinymce\plugins\jbimages\plugin.min.js" />
-    <Content Include="favicon.ico" />
     <Content Include="Scripts\admin.common.js" />
     <Content Include="Scripts\farbtastic.js" />
     <Content Include="Content\tinymce\plugins\jbimages\readme" />
@@ -1253,6 +1254,7 @@
     <Content Include="Scripts\kendo\2014.1.318\jquery.min.map" />
     <None Include="Scripts\_references.js" />
     <Content Include="Themes\DefaultClean\Content\images\free-shipping.png" />
+    <Content Include="Themes\DefaultClean\Content\images\logo.jpg" />
     <Content Include="Themes\DefaultClean\Content\images\mobile-menu-collapse.png" />
     <Content Include="Themes\DefaultClean\Content\images\mobile-menu-expand.png" />
     <Content Include="Themes\DefaultClean\Content\images\top-menu-background.png" />

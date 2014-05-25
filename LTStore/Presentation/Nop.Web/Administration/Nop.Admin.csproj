@@ -369,6 +369,7 @@
     <Compile Include="Validators\Catalog\ProductValidator.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\images\logo.jpg" />
     <Content Include="Content\styles.rtl.css" />
     <Content Include="Content\images\1pix.gif" />
     <Content Include="Content\images\admin-gvw-bg.gif" />

@@ -41,7 +41,7 @@
 
 <ul class="top-menu">
     @Html.Widget("header_menu_before")
-    @if (Model.Categories.Count > 0)
+    @*@if (Model.Categories.Count > 0)
     {
         foreach (var category in Model.Categories)
         {
@@ -68,7 +68,60 @@
             <li><a href="@Url.RouteUrl("Boards")">@T("Forum.Forums")</a></li>
         }
         <li><a href="@Url.RouteUrl("ContactUs")">@T("ContactUs")</a></li>
-    }
+    }*@
+
+    <li><a href="@Url.RouteUrl("HomePage")">@T("HomePage")</a></li>
+    <li>
+        <a href="@Url.RouteUrl("HomePage")">@T("Products")</a>
+        <div class="top-menu-triangle"></div>
+        <ul class="sublist firstLevel">
+            @foreach (var category in Model.Categories)
+            {
+                @RenderCategoryLine(category, 1, false)
+            }
+        </ul>
+    </li>
+    <li>
+        <a href="@Url.RouteUrl("HomePage")">@T("Services")</a>
+        <div class="top-menu-triangle"></div>
+        <ul class="sublist firstLevel">
+            <li><a href="@Url.RouteUrl("HomePage")">Product Services Home</a></li>
+            <li><a href="@Url.RouteUrl("HomePage")">Packaging</a></li>
+            <li><a href="@Url.RouteUrl("HomePage")">Distribution</a></li>
+            <li><a href="@Url.RouteUrl("HomePage")">Warehousing</a></li>
+            <li><a href="@Url.RouteUrl("HomePage")">Additional Services</a></li>
+        </ul>
+     </li>
+    <li>
+        <a href="@Url.RouteUrl("HomePage")">@T("Options")</a>
+        <div class="top-menu-triangle"></div>
+        <ul class="sublist firstLevel">
+            <li><a href="@Url.RouteUrl("HomePage")">Product Options Home</a></li>
+            <li><a href="@Url.RouteUrl("HomePage")">Pantone Color Chart</a></li>
+            <li><a href="@Url.RouteUrl("HomePage")">Metal Plating Guide</a></li>
+            <li><a href="@Url.RouteUrl("HomePage")">Metal Plating Guide</a></li>
+            <li><a href="@Url.RouteUrl("HomePage")">Attachment Options</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="@Url.RouteUrl("HomePage")">@T("Info")</a>
+        <div class="top-menu-triangle"></div>
+        <ul class="sublist firstLevel">
+            <li><a href="@Url.RouteUrl("HomePage")">About LogoTags</a></li>
+            <li><a href="@Url.RouteUrl("HomePage")">Contact LogoTags</a></li>
+            <li><a href="@Url.RouteUrl("HomePage")">Minimum Order Quantities</a></li>
+            <li><a href="@Url.RouteUrl("HomePage")">Request Samples</a></li>
+            <li><a href="@Url.RouteUrl("HomePage")">Request Price Quote</a></li>
+            <li><a href="@Url.RouteUrl("HomePage")">Terms &amp; Conditions</a></li>
+            <li><a href="@Url.RouteUrl("Sitemap")">Logotags.com Site Map</a></li>
+            <li><a href="http://www.facebook.com/pages/Logotags/141699339194144" target="_blank">LogoTags Facebook Page</a></li>
+            <li><a href="http://pinterest.com/logotags/" target="_blank">LogoTags Pinterest Page</a></li>
+            <li><a href="http://twitter.com/#!/LogoTags" target="_blank">LogoTags Twitter Page</a></li>
+            <li><a href="https://plus.google.com/117738687983034521935/posts" target="_blank">LogoTags Google+ Page</a></li>
+        </ul>
+    </li>
+    <li><a href="@Url.RouteUrl("HomePage")">@T("FREE QUOTE")</a></li>
+    
     @Html.Widget("header_menu_after")
 </ul>
 
